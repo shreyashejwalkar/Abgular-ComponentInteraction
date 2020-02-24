@@ -11,15 +11,13 @@ import { EmployeeService } from '../employee.service';
   `,
   styleUrls: ['./employee-list.component.css']
 })
-export class EmployeeListComponent implements OnInit {
-
-  public employees = [];
-
-  constructor(private _employeeService : EmployeeService) { }
-
-  ngOnInit(): void 
-  {
-    this.employees=this._employeeService.getEmployees(); 
-  }
+export class EmployeeListComponent implements OnInit
+ {
+    public employees = [];
+    constructor(private _employeeService : EmployeeService) { }
+    ngOnInit(): void 
+    {
+      this.employees=this._employeeService.getEmployees(); 
+    }
 
 }
